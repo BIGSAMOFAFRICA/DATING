@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Love Calculator</title>
+</head>
+<body>
+    <video id="bgvideo" playsinline autoplay muted loop>
+        <source src="ASSETS/TITANIC.mp4" type="video/mp4">
+    </video>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4" id="text">Love Calculator</h1>
+        <form id="loveCalculatorForm">
+            <div class="form-group">
+                <label for="person1">YOUR NAME:</label>
+                <input type="text" class="form-control  form-group has-warning" id="person1" required>
+            </div>
+            <div class="form-group">
+                <label for="person2">CRUSH NAME:</label>
+                <input type="text" class="form-control" id="person2" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculateLove()">Calculate Love</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
