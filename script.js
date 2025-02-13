@@ -13,7 +13,7 @@ function calculateLove() {
     resultContainer.innerHTML = `<h3 class="text-white font-semibold">${person1} and ${person2}</h3>`;
 
     if (lovePercentage > 50) {
-        resultContainer.innerHTML += `<p class="text-green-500 font-bold text-lg">${lovePercentage}% - You got a valentine match! 💖</p>`;
+        resultContainer.innerHTML += `<p class="text-green-500 font-bold text-lg">${lovePercentage}% - You are both compatible for valentine! 💖</p>`;
     } else {
         resultContainer.innerHTML += `<p class="text-red-500 font-bold text-lg">${lovePercentage}% - Abort relationship or you bear the risk! 💔</p>`;
 
