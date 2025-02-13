@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Love Calculator</title>
 </head>
-<body>
-    <video id="bgvideo" playsinline autoplay muted loop>
+<body class="relative flex items-center justify-center min-h-screen bg-black text-white">
+    <video id="bgvideo" class="absolute top-0 left-0 w-full h-full object-cover" playsinline autoplay muted loop>
         <source src="ASSETS/TITANIC.mp4" type="video/mp4">
     </video>
-    <div class="container mt-5">
-        <h1 class="text-center mb-4" id="text">Love Calculator</h1>
-        <form id="loveCalculatorForm">
-            <div class="form-group">
-                <label for="person1">YOUR NAME:</label>
-                <input type="text" class="form-control  form-group has-warning" id="person1" required>
+
+    <div class="relative z-10 w-full max-w-md p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-lg">
+        <h1 class="text-center text-3xl font-bold mb-6 text-pink-500">Valentine Love Calculator</h1>
+        <form id="loveCalculatorForm" class="space-y-4">
+            <div>
+                <label for="person1" class="block text-sm font-medium text-white">YOUR NAME:</label>
+                <input type="text" id="person1" class="w-full p-3 mt-1 bg-gray-900 text-white border border-pink-500 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
             </div>
-            <div class="form-group">
-                <label for="person2">CRUSH NAME:</label>
-                <input type="text" class="form-control" id="person2" required>
+            <div>
+                <label for="person2" class="block text-sm font-medium text-white">CRUSH NAME:</label>
+                <input type="text" id="person2" class="w-full p-3 mt-1 bg-gray-900 text-white border border-pink-500 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
             </div>
-            <button type="button" class="btn btn-primary" onclick="calculateLove()">Calculate Love</button>
+            <button type="button" class="w-full py-3 text-lg font-semibold bg-pink-500 hover:bg-pink-600 text-white rounded-md transition" onclick="calculateLove()">Calculate Love</button>
         </form>
-        <div id="result" class="mt-4"></div>
+        <div id="result" class="mt-4 text-center text-lg font-semibold"></div>
     </div>
 
     <script src="script.js"></script>
